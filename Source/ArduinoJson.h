@@ -1,6 +1,5 @@
-// ArduinoJson - https://arduinojson.org
-// Copyright © 2014-2025, Benoit BLANCHON
-// MIT License
+// Arduino JSON Header
+// Copyright © 2014-2025, Benoit Blanchon
 
 #pragma once
 
