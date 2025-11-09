@@ -1,6 +1,5 @@
-// ArduinoJson - https://arduinojson.org
-// Copyright © 2014-2025, Benoit BLANCHON
-// MIT License
+/// Arduino JSON C++ Header
+// Copyright © 2014-2025, Benoit Blanchon
 
 #pragma once
 
@@ -10,12 +9,10 @@
 
 #include "ArduinoJson/Configuration.hpp"
 
-// Include Arduino.h before stdlib.h to avoid conflict with atexit()
-// https://github.com/bblanchon/ArduinoJson/pull/1693#issuecomment-1001060240
 #if ARDUINOJSON_ENABLE_ARDUINO_STRING || ARDUINOJSON_ENABLE_ARDUINO_STREAM || \
     ARDUINOJSON_ENABLE_ARDUINO_PRINT ||                                       \
     (ARDUINOJSON_ENABLE_PROGMEM && defined(ARDUINO))
-#  include <Arduino.h>
+#include <Arduino.h>
 #endif
 
 #if !ARDUINOJSON_DEBUG
@@ -26,8 +23,6 @@
 #  endif
 #endif
 
-// Remove true and false macros defined by some cores, such as Arduino Due's
-// See issues #2181 and arduino/ArduinoCore-sam#50
 #ifdef true
 #  undef true
 #endif
