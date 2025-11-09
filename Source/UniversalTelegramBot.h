@@ -1,23 +1,5 @@
-/*
-Copyright (c) 2018 Brian Lough. All right reserved.
-
-UniversalTelegramBot - Library to create your own Telegram Bot using
-ESP8266 or ESP32 on Arduino IDE.
-
-This library is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
-
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
-*/
+// Telegram Bot C Header
+// Copyright (c) 2018, Brian Lough
 
 #ifndef UniversalTelegramBot_h
 #define UniversalTelegramBot_h
@@ -34,8 +16,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 #define TELEGRAM_SSL_PORT 443
 #define HANDLE_MESSAGES 1
 
-//unmark following line to enable debug mode
-//#define _debug
+// Debug Mode
+// #define _debug
 
 typedef bool (*MoreDataAvailable)();
 typedef byte (*GetNextByte)();
